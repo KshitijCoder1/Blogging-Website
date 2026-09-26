@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Blog</title>
+    <link rel="stylesheet" href="Create.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">My Blog</div>
+        <div class="nav-links">
+            <a href="../Front.html">Home</a>
+            <a href="Create.html" class="active">Create a Blog</a>
+            <a href="../Contact Page/Contact.html">Contact</a>
+            <a href="../Login Page/Login.html" class="logout-btn">Logout</a>
+        </div>
+    </nav>
+
+    <div class="create-container">
+        <div class="form-box">
+            <h1>Create a New Blog</h1>
+            <p class="subtitle">Share your ideas, stories, or knowledge with the world.</p>
+
+            <form id="createBlogForm" action="../Front.html" onsubmit="return publishBlog()">
+                <div class="form-group">
+                    <label for="blogTitle">Blog Title:</label>
+                    <input type="text" id="blogTitle" placeholder="e.g. The Secret Life of Sea Otters" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="authorName">Author Name:</label>
+                    <input type="text" id="authorName" placeholder="e.g. John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select id="category">
+                        <option value="nature">Nature & Wildlife</option>
+                        <option value="technology">Technology</option>
+                        <option value="lifestyle">Lifestyle</option>
+                        <option value="travel">Travel</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="imageName">Cover Image (file name or URL):</label>
+                    <input type="text" id="imageName" placeholder="e.g. Otter.jpg">
+                </div>
+
+                <div class="form-group">
+                    <label for="blogContent">Blog Content:</label>
+                    <textarea id="blogContent" rows="10" placeholder="Write your blog post here..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-publish">Publish Blog</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Blog. All rights reserved.</p>
+    </footer>
+
+    <script src="Create.js"></script>
+</body>
+</html>
