@@ -12,9 +12,6 @@ body {
     flex-direction: column;
 }
 
-/* ================================
-   NAVIGATION BAR
-   ================================ */
 .navbar {
     background-color: #1b2636;
     padding: 15px 30px;
@@ -102,7 +99,6 @@ input, select, textarea {
     border-radius: 5px;
     font-size: 14px;
     font-family: inherit;
-    outline: none;
 }
 
 input:focus, select:focus, textarea:focus {

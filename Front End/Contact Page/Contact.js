@@ -8,7 +8,8 @@ function formvalid(){
         alert("Please fill all the fields");
         return false;
     }
-
-    alert("Thank you, " + name + "! Your message has been sent successfully.");
-    return true;
+    else{
+        alert("Thank you, " + name + "! Your message has been sent successfully.");
+        return true;
+    }
 }
